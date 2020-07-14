@@ -1,7 +1,16 @@
 ---
-layout: error
-title: 404
+layout: default
+description: "Sorry, Page Not Found :("
 ---
-## Why are you still procrastinating?
 
-##### Check <a href="http://waitbutwhy.com/2013/11/how-to-beat-procrastination.html" target="_blank">this</a> out if you want to stop looking for pages that don't exist
+{% include header.html %}
+
+<header class="g-banner np-banner {{ site.postPatterns | prepend: 'post-pattern-' }}" data-theme="{{ site.theme-color }}">
+    <div class="post-wrapper">
+        <h1>404</h1>
+        <span class="subheading">{{ page.description }}</span>
+        <a href="{{ site.nav.home }}" class="btn">Back to home</a>
+    </div>
+</header>
+
+
