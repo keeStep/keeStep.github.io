@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'H2O theme for Jekyll'
-subtitle: '向网站模板作者致敬'
+subtitle: '援引自H2O模板作者 - 致敬'
 date: 2020-07-14
 categories: 技术
 cover: 'http://on2171g4d.bkt.clouddn.com/jekyll-theme-h2o-postcover.jpg'

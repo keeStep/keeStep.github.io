@@ -216,9 +216,16 @@ $(document).ready(function(){
         var className = 'night-mode';
 
         var date = new Date();
-        var hour = date.getHours();
+        // var hour = date.getHours();
 
-        if (hour <= 6 || hour >= 18) {
+        // if (hour <= 6 || hour >= 18) {
+        //     el.addClass(className);
+        // }
+
+        // 每分钟变换一次夜间模式
+        var minutes = date.getMinutes();
+
+        if (minutes / 2 == 0) {
             el.addClass(className);
         }
     }
