@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MathJax Test
-date: 2020-07-15
+date: 2020-07-14
 categories: test
 tags: mathjax 
 ---
