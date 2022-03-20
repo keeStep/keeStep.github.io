@@ -25,8 +25,8 @@ footer:
   since: 2020
 
 # Author 配置博主信息
-author: 'kee'
-nickname: '羽子少年'
+author: 'likeju'
+nickname: 'kee'
 bio: 'Java | Python | Enjoy'
 avatar: '/assets/img/mojito.jpg'
 
@@ -38,8 +38,12 @@ nightMode: true
 
 # Comments 评论功能
 comments:
-  disqus: true
+  disqus: false
   disqus_url: 'https://likeju.disqus.com/embed.js'
+  valine:
+    enable: true
+    appId: '0tlioXr2XSxQXFQDIUTXo2qe-gzGzoHsz'
+    appKey: 'SU4zrJcM53CcyIcaTbWrNYhp'
 
 # MathJax 公式支持 by Ray-Eldath
 mathjax: true
@@ -80,7 +84,7 @@ kramdown:
   input: GFM
 
 # RSS
-RSS: false
+RSS: true
 
 # Permalink
 # See: https://github.com/kaeyleo/jekyll-theme-H2O/issues/35
