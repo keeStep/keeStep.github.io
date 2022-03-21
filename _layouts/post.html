@@ -38,6 +38,8 @@
     {% endif %}
 
     <article class="markdown-body">
+      {% include toc.html html=content %}
+
       {{ page.content }}
     </article>
 

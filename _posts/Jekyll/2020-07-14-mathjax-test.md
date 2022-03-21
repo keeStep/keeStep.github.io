@@ -3,7 +3,7 @@ layout: post
 title: MathJax Test
 date: 2020-07-14
 categories: test
-tags: jekyll 
+tags: Jekyll 
 ---
 
 mathjax in markdown :)

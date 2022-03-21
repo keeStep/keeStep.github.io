@@ -4,7 +4,7 @@ title: 'Hello Jekyll'
 date: 2020-07-14
 author: Jekyll
 cover: 'http://on2171g4d.bkt.clouddn.com/jekyll-banner.png'
-tags: jekyll
+tags: Jekyll
 ---
 
 > Transform your plain text into static websites and blogs.
