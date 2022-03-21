@@ -3,6 +3,7 @@ layout: post
 title: MathJax Test
 date: 2020-07-14
 categories: test
+author: kaeyleo
 tags: Jekyll 
 ---
 
