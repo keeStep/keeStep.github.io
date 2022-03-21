@@ -24,6 +24,13 @@
       <div class="post-meta">
         <span class="post-meta-item"><i class="iconfont icon-author"></i>{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</span>
         <time class="post-meta-item" datetime="{{ page.date | date:"%y-%m-%d" }}"><i class="iconfont icon-date"></i>{{ page.date | date_to_string }}</time>
+        <!-- 阅读量 -->
+        {% if site.comments.valine.enable %}
+        <span id="{{ page.url }}" class="leancloud_visitors" data-flag-title="{{ page.title }}">
+          <em class="post-meta-item-text">浏览量 </em>
+          <i class="leancloud-visitors-count">?</i>
+        </span>
+        {% endif %}
       </div>
     </div>
     {% if page.cover %}
@@ -138,9 +145,14 @@
       el:'#valine_thread',
       appId:'{{ site.comments.valine.appId }}',
       appKey:'{{ site.comments.valine.appKey }}',
-      notify:true,
+      notify:'{{ site.comments.valine.notify }}',
+      visitor:'{{ site.comments.valine.visitor }}',
       path: '{{ page.url }}',
-      placeholder:'我想和你唠唠嗑'
+      placeholder:'take it easy',
+      meta: ['nick','mail', 'link'],
+      requiredFields: ['nick'],
+      recordIP: true,
+      enableQQ: true
     })
     {% endif %}
   </script>

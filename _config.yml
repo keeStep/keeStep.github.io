@@ -44,6 +44,8 @@ comments:
     enable: true
     appId: '0tlioXr2XSxQXFQDIUTXo2qe-gzGzoHsz'
     appKey: 'SU4zrJcM53CcyIcaTbWrNYhp'
+    notify: false
+    visitor: true
 
 # MathJax 公式支持 by Ray-Eldath
 mathjax: true
