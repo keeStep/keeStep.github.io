@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: Jekyll 环境安装到项目启动
+title: Jekyll 环境搭建(Mac M1 & Windows)
 date: 2022-03-20
 categories: test
 tags: Jekyll 
