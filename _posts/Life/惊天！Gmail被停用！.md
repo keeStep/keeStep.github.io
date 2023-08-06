@@ -1,0 +1,24 @@
+---
+title: 惊天！Gmail被停用！
+date: 2023-07-30 16:15
+tags: 
+- 天坑
+categories: 瞎折腾
+---
+
+### 1.Gmail停用
+别慌···，国内用户的Gmail被停用很正常，因为你要翻墙，要VPN，会因为代理的地址变换频繁而导致gmail认为你账号异常，所以被停用
+
+### 2.直接申诉
+话说，我也是申诉了好几次都没成功，急死我了都，然后淡定下来，唱了首歌之后，就找了恳切的申诉理由才申诉成功，等个2个工作日左右吧
+给你重新使用的链接在填的邮箱
+`一定要用英文！！`
+
+### 3.申诉理由
+`原中文`
+> 您好我的账户是xxxxxx@gmail.com。我是中国区用户，必需使用vpn代理才能使用谷歌产品，可能由于vpn的不稳定和频繁切换造成账号异常被停用，这个账号对我很重要，希望您可以帮我解决一下，非常感谢。
+
+`英文`
+> Hi my account is xxxxxx@gmail.com. I am a user in China, and I must use a VPN proxy to use Google products. The account may be disabled due to the instability of the VPN and frequent switching. This account is very important to me. I hope you can help me solve it, thank you very much.
+
+
