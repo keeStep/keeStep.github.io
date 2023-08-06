@@ -2,6 +2,8 @@
 
 基于Jekyll的博客主题模板，简洁轻量。
 
+> 主题作者：[廖柯宇](https://github.com/kaeyleo/jekyll-theme-H2O.git)
+
 另外，还有此主题的[Ghost版本](https://github.com/eastpiger/ghost-theme-H2O) by [eastpiger](https://github.com/eastpiger)
 
 ### Preview

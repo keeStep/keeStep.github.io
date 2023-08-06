@@ -24,6 +24,13 @@
       <div class="post-meta">
         <span class="post-meta-item"><i class="iconfont icon-author"></i>{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</span>
         <time class="post-meta-item" datetime="{{ page.date | date:"%y-%m-%d" }}"><i class="iconfont icon-date"></i>{{ page.date | date_to_string }}</time>
+        <!-- 阅读量 -->
+        {% if site.comments.valine.enable %}
+        <span id="{{ page.url }}" class="leancloud_visitors" data-flag-title="{{ page.title }}">
+          <em class="post-meta-item-text">浏览量 </em>
+          <i class="leancloud-visitors-count">?</i>
+        </span>
+        {% endif %}
       </div>
     </div>
     {% if page.cover %}
@@ -38,6 +45,8 @@
     {% endif %}
 
     <article class="markdown-body">
+      {% include toc.html html=content %}
+
       {{ page.content }}
     </article>
 
@@ -98,9 +107,16 @@
       </div>
       {% endif %}
     </section>
+
     {% if site.comments.disqus %}
     <section class="post-footer-item comment">
-        <div id="disqus_thread"></div>
+      <div id="disqus_thread"></div>
+    </section>
+    {% endif %}
+
+    {% if site.comments.valine.enable %}
+    <section class="post-footer-item comment">
+      <div id="valine_thread"></div>
     </section>
     {% endif %}
   </section>
@@ -108,6 +124,8 @@
   {% include footer.html %}
 
   <script src="{{ "/assets/js/social-share.min.js" | relative_url }}"></script>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
   <script>
     socialShare('.social-share', {
       sites: [
@@ -120,6 +138,23 @@
       wechatQrcodeTitle: "分享到微信朋友圈",
       wechatQrcodeHelper: '<p>扫码后点击右上角</p><p>将本文分享至朋友圈</p>'
     });
+
+    {% if site.comments.valine.enable %}
+    var valine = new Valine();
+    valine.init({
+      el:'#valine_thread',
+      appId:'{{ site.comments.valine.appId }}',
+      appKey:'{{ site.comments.valine.appKey }}',
+      notify:'{{ site.comments.valine.notify }}',
+      visitor:'{{ site.comments.valine.visitor }}',
+      path: '{{ page.url }}',
+      placeholder:'take it easy',
+      meta: ['nick','mail', 'link'],
+      requiredFields: ['nick'],
+      recordIP: true,
+      enableQQ: true
+    })
+    {% endif %}
   </script>
 
   {% if site.comments.disqus %}

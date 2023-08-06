@@ -25,8 +25,8 @@ footer:
   since: 2020
 
 # Author 配置博主信息
-author: 'kee'
-nickname: '羽子少年'
+author: 'likeju'
+nickname: 'kee'
 bio: 'Java | Python | Enjoy'
 avatar: '/assets/img/mojito.jpg'
 
@@ -39,27 +39,35 @@ nightMode: true
 # Comments 评论功能
 comments:
   disqus: false
-  disqus_url: ''
+  disqus_url: 'https://likeju.disqus.com/embed.js'
+  valine:
+    enable: true
+    appId: '0tlioXr2XSxQXFQDIUTXo2qe-gzGzoHsz'
+    appKey: 'SU4zrJcM53CcyIcaTbWrNYhp'
+    notify: false
+    visitor: true
 
 # MathJax 公式支持 by Ray-Eldath
 mathjax: true
 
 # Share
+#"items": ["sns","share","weibo","qq","douban","qzone","linkedin","facebook","google"]
 social-share: true
-social-share-items: ['wechat', 'weibo', 'douban', 'twitter']
+social-share-items: ['wechat', 'weibo', 'qq', 'qzone', 'linkedin']
 
 # theme color 主题皮肤
 theme-color: 'default'  # pink or default
 
+# 头图底纹
 # Post header background patterns (when the post no cover): circuitBoard, overlappingCircles, food, glamorous, ticTacToe, seaOfClouds
 postPatterns: 'circuitBoard'
 
 # SNS settings 配置社交网站
 # url: email, weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
 sns:
-  weibo: ''
-  juejin: ''
-  instagram: ''
+  # dribble: 'https://blog.csdn.net/v_spit2017?spm=1000.2115.3001.5343'
+  # juejin: 'https://juejin.cn/user/4248168662055543'
+  # instagram: ''
   github: '//github.com/keeStep'
 
 # Tags 设置标签
@@ -78,7 +86,7 @@ kramdown:
   input: GFM
 
 # RSS
-RSS: false
+RSS: true
 
 # Permalink
 # See: https://github.com/kaeyleo/jekyll-theme-H2O/issues/35
